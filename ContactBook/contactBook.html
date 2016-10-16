@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html ng-app="ui.bootstrap.demo">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/contactB.css"/>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+     <script src="http://code.angularjs.org/1.0.1/angular-resource-1.0.1.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    <script src="js/contactBook.js"></script>
+</head>
+<body ng-controller="ContactFormCtrl">
+<div class="container-fluid noPadding">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal headerContainer">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-sm-offset-1">
+                            <label for="searchField" class="searchLabel"  ng-click="open()">Contact List</label>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="searchField" placeholder="Search for...">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-secondary" ng-click="open(alert('here'))" type="button">Go!</button>
+                                  </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="contactBg">
+                <ul class="row col-md-offset-2">
+                    <li class="col-md-2 contactBorder" ng-repeat="contact in contacts">
+                        <img class="img-responsive" alt="Contact Image" src="{{contact.profile_image}}">
+                        <!--  <img class="img-responsive" alt="Contact Image" src="{{contact.icon}}">
+                        <span>{{contact.name}}</span><br> -->
+                        <span>{{contact.job}}</span>|<span>@{{contact.company_name}}</span>
+                        <div class="hoverState">
+                            <span>Phone Number:{{contact.phone}}</span>
+                            <span>Email: {{contact.email}}</span>
+                        </div>
+                    </li>
+                    <!-- <li class="col-md-2 contactBorder">
+                        <img class="img-responsive" alt="Contact Image" src="image/contact.png">
+                        <span>Full Name</span><br>
+                        <span>Job Title</span>|<span>@company name</span>
+                        <div class="hoverState">
+                            <span>Phone Number: 530-859-9876</span>
+                            <span>Email: blahblah@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="col-md-2 contactBorder">
+                        <img class="img-responsive" alt="Contact Image" src="image/contact.png">
+                        <span>Full Name</span><br>
+                        <span>Job Title</span>|<span>@company name</span>
+                        <div class="hoverState">
+                            <span>Phone Number: 530-859-9876</span>
+                            <span>Email: blahblah@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="col-md-2 contactBorder">
+                        <img class="img-responsive" alt="Contact Image" src="image/contact.png">
+                        <span>Full Name</span><br>
+                        <span>Job Title</span>|<span>@company name</span>
+                        <div class="hoverState">
+                            <span>Phone Number: 530-859-9876</span>
+                            <span>Email: blahblah@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="col-md-2 contactBorder">
+                        <img class="img-responsive" alt="Contact Image" src="image/contact.png">
+                        <span>Full Name</span><br>
+                        <span>Job Title</span>|<span>@company name</span>
+                        <div class="hoverState">
+                            <span>Phone Number: 530-859-9876</span>
+                            <span>Email: blahblah@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="col-md-2 contactBorder">
+                        <img class="img-responsive" alt="Contact Image" src="image/contact.png">
+                        <span>Full Name</span><br>
+                        <span>Job Title</span>|<span>@company name</span>
+                        <div class="hoverState">
+                            <span>Phone Number: 530-859-9876</span>
+                            <span>Email: blahblah@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="col-md-2 contactBorder">
+                        <img class="img-responsive" alt="Contact Image" src="image/contact.png">
+                        <span>Full Name</span><br>
+                        <span>Job Title</span>|<span>@company name</span>
+                        <div class="hoverState">
+                            <span>Phone Number: 530-859-9876</span>
+                            <span>Email: blahblah@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="col-md-2 contactBorder">
+                        <img class="img-responsive" alt="Contact Image" src="image/contact.png">
+                        <span>Full Name</span><br>
+                        <span>Job Title</span>|<span>@company name</span>
+                        <div class="hoverState">
+                            <span>Phone Number: 530-859-9876</span>
+                            <span>Email: blahblah@gmail.com</span>
+                        </div>
+                    </li> -->
+
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
