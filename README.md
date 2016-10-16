@@ -1,4 +1,4 @@
-# contactsWebpage
+# Contacts Webpage
  The task is to create a simple contact list that should look like the below mockup. Use our API at
  https://candidate-test.herokuapp.com/contacts
 # Requirements:
