@@ -22,7 +22,7 @@
                         <div class="col-sm-4 col-xs-12 col-sm-offset-1">
                             <label for="searchField" class="searchLabel" ng-click="open()">Contact List</label>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-5 col-sm-offset-1">
                             <div class="input-group">
                                 <input type="text" class="form-control" id="searchField" placeholder="Search for...">
                                   <span class="input-group-btn">
@@ -35,16 +35,16 @@
             </form>
             <div class="contactBg">
                 <ul class="row col-md-offset-1">
-                    <li class="col-md-3 col-sm-3 col-xs-8 contactList list-unstyled list-inline" ng-repeat="contact in contacts">
+                    <li class="col-md-3 col-sm-3 col-xs-6 contactList list-unstyled list-inline" ng-repeat="contact in contacts">
                         <div class="row">
                             <div class="contactBorder col-md-10 col-sm-10 col-xs-10">
                                 <img class="img-responsive contactImg" alt="Contact Image" src="{{contact.profile_image}}">
                                 <div>
                                     <img class="imgLogo" alt="Contact Image" src="{{contact.icon}}">
                                 </div>
-                                <div>
+                                <div class="title">
                                     <span class="containerText"><b>{{contact.name}}</b></span><br>
-                                    <span class="containerText">{{contact.job}}</span>|<span class="containerText">@{{contact.company_name}}</span>
+                                    <span class="containerTitle">{{contact.job}}</span>|<span class="containerTitle">@{{contact.company_name}}</span>
                                 </div>
                                 <div class="hoverState">
                                     <p class="containerText">Number:{{contact.phone}}</p>

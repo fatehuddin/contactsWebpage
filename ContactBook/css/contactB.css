@@ -3,7 +3,8 @@
   padding-right: 0 !important; }
 
 .headerContainer {
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-left: 15px; }
 
 .searchLabel {
   font-size: 1.7em;
@@ -31,14 +32,14 @@
   background-color: #ededed; }
 
 .contactList {
-  height: 480px; }
+  height: 504px; }
 
 .contactBorder {
   background-color: #ffffff;
   border: #d3d3d3;
   margin: 20px 10px 0 0;
   padding: 20px;
-  height: 395px;
+  height: 400px;
   position: fixed;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
@@ -47,15 +48,27 @@
   -moz-box-shadow: 1px 2px 8px 2px #3f3f3f;
   box-shadow: 1px 2px 8px 2px #3f3f3f; }
   .contactBorder:hover {
-    height: 450px; }
+    height: 500px; }
+
+.contactImg {
+  height: 264px !important; }
 
 .imgLogo {
   max-width: 23%;
   position: relative;
-  bottom: 30px;
-  left: 10px; }
+  bottom: 14px;
+  left: 10px;
+  margin-bottom: 20px; }
+
+.title {
+  padding-bottom: 15px;
+  position: relative;
+  bottom: 15px; }
 
 .containerText {
   font-size: 0.9em; }
+
+.containerTitle {
+  font-size: 0.7em; }
 
 /*# sourceMappingURL=contactB.css.map */
